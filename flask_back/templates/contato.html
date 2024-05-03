@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contatos</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/contato.css') }}">
 </head>
 <body>
     <div class="contato">
-        <div class="img">
-            <img src="{{ url_for('static', filename='imagens/rosto.png') }}"/>
+        <div id="card">
+            <div class="img">
+                <img id="img" src="{{ url_for('static', filename='imagens/rosto.png') }}"/>
+            </div>
+            <div class="info">
+                Email: holandsouza@gmail.com<br>
+                Telefone: (89)994542743
+            </div>
         </div>
-        <div class="info">
-            Email: holandsouza@gmail.com<br>
-            Telefone: (89)994542743
-        </div>
-        
     </div>
 </body>
 </html>
