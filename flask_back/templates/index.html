@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Consulta de Filmes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav>
+        <ul>contato</ul>
+        <ul>sobre</ul>
+        <ul>login</ul>
+    </nav>
+   <div class="container">
+        <div class="cabecalho">
+
+            <input type="text" id="movieTitle" placeholder="Informe o nome do filme">
+            <button id="btn" onclick="buscar()">Pesquisar</button>
+        </div>
+        <div id="filme-info">
+            <div class="img-f">
+                <img id="poster" src="" alt="">
+            </div>
+            <div class="infos">
+                <h1><strong></strong> <span id="titulo"></span></h1>
+                <div class="inf">
+                    <p><strong></strong> <span id="lancamento"></span></p>
+                    <p><strong></strong> <span id="genero"></span></p>
+                    <p><strong></strong> <span id="duracao"></span></p>
+                </div>
+            <p><strong></strong> <span id="sinopse"></span></p>
+            </div>
+        </div>    
+   </div>
+   <script src="{{ url_for('static', filename='js/filme.js') }}"></script>
+</body>
+<footer>
+    <h1>Desenvolvio por: Gustavo Holanda, Luana Feitosa e Vanessa Valeria</h1>
+</footer>
+</html>
+
+  

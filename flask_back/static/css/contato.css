@@ -26,9 +26,18 @@ body{
 }
 .img{
     background-color: black;
-    scale: 0.5;
+    scale: 0.8;
     border-radius: 50%;
+    object-fit:contain;
 }
 #img{
-    object-fit: fill;
+    object-fit:contain;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    background-color: bisque;
+}
+.info h5{
+    text-align: center;
 }

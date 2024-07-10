@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Roboto', sans-serif;
+    font-weight: 600;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: rgb(173, 32, 32);
+    border-radius: 20px;
+    color: antiquewhite;
+    padding: 20px;
+    margin-top: 25px;
+    gap: 25px;
+}
+body{
+    background-color: #1c1c1c;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+.container{
+    width: 100%;
+    margin: auto;
+}
+.cabecalho{
+    padding-top: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+#movieTitle{
+    width: 75%;
+    font-size: 14px;
+    padding: 10px;
+    background-color: #4a4a4a;
+    border-radius: 5px;
+    color: white;
+
+}
+#btn{
+    padding: 10px;
+    background-color: #4a4a4a;
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+    text-align: center;
+}
+#filme-info{
+    display: flex;
+    padding-top: 25px;
+    justify-content: space-between;
+    gap: 25px;
+
+}
+.img-f {
+    width: 100%;
+}
+
+#poster{
+    border-radius: 8px;
+    box-shadow: 0 0 10px 2px #4a4a4a; 
+}
+
+#titulo{
+    
+    font-size: 38px;
+    color:#ffffff;
+}
+.inf{
+    margin-top: 25px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+
+}
+#lancamento, #duracao{
+    color: #ce171f;
+} 
+#genero{
+    color: #cab9b9;
+}
+#sinopse{
+    font-size: 18px;
+    color: #cab9b9;
+}
+footer{
+    margin: auto;
+    padding-top: 100px;
+    bottom: 0;
+    text-align: center;
+}
+footer h1{
+    color:#cab9b9;
+    font-size: 20px;
+}
+@media only screen and (max-width: 700px) {
+    body{
+        width: 90%;
+        margin: auto;
+    }
+    .cabecalho{
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    #filme-info{
+        display: flex;
+        flex-direction: column;
+    }
+    #poster{
+        width: 100%;
+        aspect-ratio: 1;
+    }
+    footer{
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    footer h1{
+        color:#cab9b9;
+        font-size: 12px;
+    }
+  }
