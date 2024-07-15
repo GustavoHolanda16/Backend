@@ -1,7 +1,6 @@
 
-// Função para buscar filmes da API do OMDb
 async function getTopMovies(year) {
-    const apiKey = '790af7bc'; // Substitua por sua chave
+    const apiKey = '790af7bc'; 
     const url = `https://www.omdbapi.com/?apikey=${apiKey}&s=movie&type=movie&y=${year}&page=1`;
     try {
         const response = await fetch(url);
@@ -17,7 +16,7 @@ async function getTopMovies(year) {
             const sortedMovies = detailedMovies
                 .filter(movie => movie.imdbRating && movie.imdbRating !== "N/A")
                 .sort((a, b) => b.imdbRating - a.imdbRating)
-                .slice(0, 10); 
+                .slice(0, 3); 
             return sortedMovies;
         } else {
             console.error('No movies found for the specified year or Search property is missing in the API response');
@@ -77,7 +76,7 @@ function createMovieElement(movie) {
     return movieElement;
 }
 
-createRanking(2004);
+createRanking(2015);
 document.getElementById('searchForm').addEventListener('submit', function(event) {
     event.preventDefault();
     const inputText = document.getElementById('btnhome').value;
